@@ -332,7 +332,7 @@ li a img{
 .img-container{
   height: 15rem;
   width: 15rem;
-  background-image: url(/img/personal.jpeg);
+  background-image: url('https://tuananh9857.github.io/Portfolio/img/personal.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
