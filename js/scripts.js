@@ -1,7 +1,6 @@
-
 const links = document.querySelectorAll('a');
 const tempSecs = document.getElementById("test").children;
-console.log(tempSecs.length)
+console.log(tempSecs)
 
 links.forEach(link =>{
     link.addEventListener('click', () =>{
@@ -16,9 +15,7 @@ links.forEach(link =>{
         
 
        let index = getIndex(link);
-
        tempSecs[index].classList.add('active');
-    
     })
 })
 

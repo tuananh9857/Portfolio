@@ -96,7 +96,7 @@ ul,li,a{
     width: 8rem;
     margin: 0 auto 0 5rem;
     text-align: center;
-    background-image: url('./icon/wings.svg');
+    background-image: url('../img/icon/wings.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -146,18 +146,17 @@ p{
 }
         /* Home */
 .home{
+    color: white;
+    display: none;
+}
+.home.active{
     height: 50%;
     width: 70%;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    visibility: hidden;
-}
-.home.active{
-    visibility: visible;
 }
 .home h1{
     font-family: 'Zen Loop', cursive; 
@@ -232,36 +231,17 @@ p{
 /* ------------------------------------ */
         /* About-me */
  .about-me{
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(ellipse at bottom, rgba(255, 255, 255, 0), transparent), linear-gradient(180deg, black 0%, rgb(29, 28, 28) 100%);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: none;    
 }
-/*
-.personal-img{
-  width: 25rem;
-  height: 35rem;
-  background-color: #1a9cbc4b;
+
+.about-me.active{
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  margin: 0 10px 0 10px;
-  box-shadow: 0rem .1rem .1rem .2rem silver;
 }
-.profile-img{
-  height: 20rem;
-  width: 20rem;
-  background-image: url('/img/personal.jpeg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50%;
-} */
 .social-media-contact{
   width: 100%;
 }
@@ -276,37 +256,14 @@ li a img{
   height: 2rem;
   width: 2rem;
 } 
-/*
-.personal-info{
-  width: 60rem;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.personal-info-container{
-  height: 80rem;
-  width: 100%;
-  margin-left: 5rem;
-  background-color: rgba(255, 255, 255, 0.075);
-  margin-top: 2rem;
-  border-radius: 2rem;
-  background: radial-gradient(ellipse at bottom right, black , rgba(192, 192, 192, 0.096), transparent), linear-gradient(45deg, rgb(35, 35, 48), rgb(46, 35, 35));
-  box-shadow: 1px 1px 5px 1px rgba(153, 205, 50, 0.493);
-} */
-
 .book{
-  width: 70%;
-  height: 75%;
-  background-color: #f2eecb ;
-  transform: rotate(-5deg);
+  width: 85%;
+  height: 90%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  
 }
 .book-line{
   height: 90%;
@@ -318,13 +275,14 @@ li a img{
 .book-left{
   width: 50%;
   height: 100%;
-  background: linear-gradient(90deg, wheat, #f2eecb 70%, #efe5d5 100%);
+  background: linear-gradient(90deg, rgba(245, 222, 179, .3), rgba(242, 238, 203, .7) 70%, rgba(239, 229, 213, .8) 100%);
   display: flex;
   flex-direction: row;
   padding: 3rem .5rem 2rem .5rem;
   box-shadow: -.5rem 0rem .2rem 0rem #efe5d563, -.6rem 0rem .2rem 0rem #efe5d5b9;
   overflow: scroll;
 }
+
 .introduction{
   height: 23rem;
   width: 100%;
@@ -343,7 +301,7 @@ li a img{
   width: 18rem;
   float: left;
   margin-right: 1rem;
-  background-color: #95cff5;
+  background-color: rgba(149, 207, 245, 0.4);
   margin-left: 3rem;
   display: flex;
   justify-content: center;
@@ -357,19 +315,19 @@ li a img{
   font-family: 'Crimson Text', serif;
   font-family: 'Indie Flower', cursive;
   line-height: 4rem;
-  color: #16181af8;
+  color: black;
 }
 .title{
   font-size: 2.5rem ;
   font-weight: bold;
   text-decoration: underline;
-  color: #2980b9;
+  color: #1707ac;
   letter-spacing: .7rem;
 }
 .title-year{
   font-size: 2.2rem;
   font-weight: 400;
-  color: rgba(255, 0, 0, 0.74);
+  color: rgb(0, 112, 28);
   letter-spacing: .3rem;
   margin-left: 2rem;
 }
@@ -389,7 +347,7 @@ li a img{
 }
 .title-year-1{
   font-weight: 800;
-  color: #a129b9;
+  color: #880303;
 }
 .intro.right{
   letter-spacing: .1rem;
@@ -404,7 +362,7 @@ li a img{
 .book-right{
   width: 50%;
   height: 100%;
-  background: linear-gradient(270deg, wheat, #f2eecb 70%, #efe5d5 100%);
+  background: linear-gradient(270deg, rgba(245, 222, 179, .3), rgba(242, 238, 203, .7) 70%, rgba(239, 229, 213, .8) 100%);
   box-shadow: .5rem 0rem .2rem 0rem #efe5d563, .6rem 0rem .2rem 0rem #efe5d5b9;
   padding: 3rem .5rem 2rem .5rem;
   overflow: scroll;
