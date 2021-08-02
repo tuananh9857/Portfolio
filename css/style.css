@@ -1,0 +1,372 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Reset CSS */
+
+/* Set font size html */
+html{
+    font-size: 62.5%;
+}
+/* End of set html */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Indie+Flower&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+ul,li,a{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+}
+/* Start of Container */
+.container{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    background-image: url('https://tuananh9857.github.io/Portfolio/img/back-ground-section-1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Start NavBar Container */
+.navbar-container{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar-links{
+    margin: 2rem 3rem 2rem 3rem;
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 2rem;
+    transition: 1s;
+    cursor: pointer;
+}
+.navbar-link-logo{
+    height: 8rem;
+    width: 8rem;
+    margin: 0 auto 0 5rem;
+    text-align: center;
+    background-image: url('../img/icon/wings.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color:white;
+}
+
+.navbar-links.navbar-active{
+    box-shadow: -.3rem 0 0rem 0rem rgb(0, 236, 204), 0 -.1rem 0 0 rgb(154, 236, 0), .1rem .1rem .5rem .3rem rgb(0, 94, 236);
+}
+
+/* End Of NavBar Container */
+
+h1{
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    color: rgba(41, 247, 247, 0.562);
+}
+p{
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: white;
+}
+.line-break{
+  height: 4px;
+  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* background: linear-gradient(90deg, rgb(127, 7, 151) 0%, rgba(221, 177, 235, 0.24) 100%); */
+  background: radial-gradient(ellipse, rgb(22, 24, 22), rgba(221, 177, 235, 0.24), transparent);
+  /* box-shadow: 0 .5px .5px .5px yellowgreen; */
+  
+}
+
+/* Section 1 */
+.section-1{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden ;
+}
+        /* Home */
+.home{
+    color: white;
+    display: none;
+}
+.home.active{
+    height: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.home h1{
+    font-family: 'Zen Loop', cursive; 
+    line-height: 3rem;
+    margin-bottom: 3rem;
+    -webkit-animation: colorchange 30s infinite alternate;
+    letter-spacing: 1rem;
+}
+@-webkit-keyframes colorchange {
+    0% {
+      
+      color: blue;
+    }
+    
+    10% {
+      
+      color: #8e44ad;
+    }
+    
+    20% {
+      
+      color: #1abc9c;
+    }
+    
+    30% {
+      
+      color: #d35400;
+    }
+    
+    40% {
+      
+      color: blue;
+    }
+    
+    50% {
+      
+      color: #34495e;
+    }
+    
+    60% {
+      
+      color: blue;
+    }
+    
+    70% {
+      
+      color: #2980b9;
+    }
+    80% {
+   
+      color: #f1c40f;
+    }
+    
+    90% {
+   
+      color: #2980b9;
+    }
+    
+    100% {
+      
+      color: pink;
+    }
+  }
+.home h2{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    letter-spacing: .2rem;
+    font-size: 2rem;
+    line-height: 5rem;
+    margin-bottom: 3rem;
+}
+        /* End of Home */
+/* ------------------------------------ */
+        /* About-me */
+ .about-me{
+    display: none;    
+}
+
+.about-me.active{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.social-media-contact{
+  width: 100%;
+}
+.social-list{
+  margin-top: .1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li a img{
+  height: 2rem;
+  width: 2rem;
+} 
+.book{
+  width: 85%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.book-line{
+  height: 90%;
+  width: .1rem;
+  margin-left: .1rem;
+  margin-right: .1rem;
+  background-color: black;
+}
+.book-left{
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(245, 222, 179, .3), rgba(242, 238, 203, .7) 70%, rgba(239, 229, 213, .8) 100%);
+  display: flex;
+  flex-direction: row;
+  padding: 3rem .5rem 2rem .5rem;
+  box-shadow: -.5rem 0rem .2rem 0rem #efe5d563, -.6rem 0rem .2rem 0rem #efe5d5b9;
+  overflow: scroll;
+}
+
+.introduction{
+  height: 23rem;
+  width: 100%;
+}
+.img-container{
+  height: 15rem;
+  width: 15rem;
+  background-image: url('https://tuananh9857.github.io/Portfolio/img/personal.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.cover-img{
+  height: 100%;
+  width: 18rem;
+  float: left;
+  margin-right: 1rem;
+  background-color: rgba(149, 207, 245, 0.4);
+  margin-left: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.intro p{
+  letter-spacing: .1rem;
+  font-family: 'Crimson Text', serif;
+  font-family: 'Indie Flower', cursive;
+  line-height: 4rem;
+  color: black;
+}
+.title{
+  font-size: 2.5rem ;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #1707ac;
+  letter-spacing: .7rem;
+}
+.title-year{
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: rgb(0, 112, 28);
+  letter-spacing: .3rem;
+  margin-left: 2rem;
+}
+.intro.right li{
+  margin-left: 2rem;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 100;
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+  line-height: 2.5rem;
+  list-style-type: none;
+}
+.title-year li:nth-of-type(1){
+  margin-top: .5rem;
+}
+.title-year-1{
+  font-weight: 800;
+  color: #880303;
+}
+.intro.right{
+  letter-spacing: .1rem;
+  font-family: 'Crimson Text', serif;
+  font-family: 'Indie Flower', cursive;
+}
+.detail{
+  margin-left: 3rem;
+  font-size: 1.8rem;
+  line-height: 1rem;
+}
+.book-right{
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(245, 222, 179, .3), rgba(242, 238, 203, .7) 70%, rgba(239, 229, 213, .8) 100%);
+  box-shadow: .5rem 0rem .2rem 0rem #efe5d563, .6rem 0rem .2rem 0rem #efe5d5b9;
+  padding: 3rem .5rem 2rem .5rem;
+  overflow: scroll;
+}
+
+/* End of About-me */
+/* End Of Section 1 */
